@@ -1,5 +1,5 @@
 pipeline {
-node
+node ('cent')
     stages {
         stage ('checkout') {
             steps {
