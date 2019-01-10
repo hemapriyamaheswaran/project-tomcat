@@ -13,6 +13,7 @@ pipeline {
         }
 	    stage ('Copy') {
             steps {
+		 sh 'rm -rf /etc/puppetlabs/code/environments/production/modules/war/files/*'
                 sh 'mv /home/zippyops/jenkins/workspace/Jenkins-UpStream/java-sample-app/target/* /etc/puppetlabs/code/environments/production/modules/war/files' 
             }
         }
