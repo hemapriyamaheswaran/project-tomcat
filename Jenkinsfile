@@ -17,5 +17,11 @@ pipeline {
          //       sh 'mv /home/zippyops/jenkins/workspace/Jenkins-UpStream/java-sample-app/target/* /etc/puppetlabs/code/environments/production/modules/war/files' 
          //   }
        //    }
+	stage ('Copy') {
+            steps {
+	 	 sh 'rm -rf /opt/chef-repo/cookbooks/file/files/*'
+                sh 'mv /home/zippyops/jenkins/workspace/Jenkins-UpStream/java-sample-app/target/* /opt/chef-repo/cookbooks/file/files' 
+            }
+           }        
     }
 }
