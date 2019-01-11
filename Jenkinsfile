@@ -19,8 +19,8 @@ pipeline {
        //    }
 	stage ('Copy') {
             steps {
-	 	 sh 'rm -rf /opt/chef-repo/cookbooks/file/files/*'
-                sh 'mv /home/zippyops/jenkins/workspace/Jenkins-UpStream/java-sample-app/target/* /opt/chef-repo/cookbooks/file/files' 
+	 	 sh 'rm -rf /opt/chef-repo/cookbooks/tomcat/files/*'
+                sh 'mv /home/zippyops/jenkins/workspace/Jenkins-UpStream/java-sample-app/target/* /opt/chef-repo/cookbooks/tomcat/files' 
             }
            }        
     }
