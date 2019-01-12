@@ -1,26 +1,33 @@
 pipeline {
-	agent {label'ubuntu'}
+	agent {label'ubuntu1'}
     stages {
-        stage ('checkout') {
-            steps {
-		checkout scm
-            }
-        }
-        stage ('Build') {
-            steps {
-                sh 'mvn -f java-sample-app/pom.xml clean install' 
-            }
-        }
+  //      stage ('checkout') {
+  //          steps {
+//		checkout scm
+//            }
+ //       }
+  //      stage ('Build') {
+   //         steps {
+   //             sh 'mvn -f java-sample-app/pom.xml clean install' 
+    //        }
+   //     }
 	 //   stage ('Copy') {
          //   steps {
 	 //	 sh 'rm -rf /etc/puppetlabs/code/environments/production/modules/war/files/*'
          //       sh 'mv /home/zippyops/jenkins/workspace/Jenkins-UpStream/java-sample-app/target/* /etc/puppetlabs/code/environments/production/modules/war/files' 
          //   }
        //    }
-	stage ('Copy') {
+//	stage ('Copy') {
+//            steps {
+//	 	 sh 'rm -rf /opt/chef-repo/cookbooks/tomcat/files/*'
+//                sh 'mv /home/zippyops/jenkins/workspace/Jenkins-UpStream/java-sample-app/target/* /opt/chef-repo/cookbooks/tomcat/files' 
+//            }
+//           }        
+//    }
+	
+	stage ('client') {
             steps {
-	 	 sh 'rm -rf /opt/chef-repo/cookbooks/tomcat/files/*'
-                sh 'mv /home/zippyops/jenkins/workspace/Jenkins-UpStream/java-sample-app/target/* /opt/chef-repo/cookbooks/tomcat/files' 
+	 	 sh 'chef-client' 
             }
            }        
     }
