@@ -24,7 +24,7 @@ pipeline {
   //              sh 'mv /home/zippyops/jenkins/workspace/Jenkins-UpStream/java-sample-app/target/* /opt/chef-repo/cookbooks/tomcat/files' 
     //        }
      //      }        
-    }
+    
 	
 	        
     }
