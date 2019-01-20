@@ -1,6 +1,6 @@
 pipeline {
-	// agent {label'ubuntu'}
-	agent any
+	 agent {label'cent'}
+	//agent any
     stages {
         stage ('checkout') {
             steps {
