@@ -2,7 +2,7 @@ pipeline {
 	// agent {label'cent'}
 	agent any
     stages {
-	    stage ('checkout') {
+	    stage ('remove') {
             steps {
 		rm -rf java-sample-app
             }
