@@ -2,6 +2,11 @@ pipeline {
 	// agent {label'cent'}
 	agent any
     stages {
+	    stage ('checkout') {
+            steps {
+		rm -rf java-sample-app
+            }
+        }
         stage ('checkout') {
             steps {
 		checkout scm
