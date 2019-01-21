@@ -4,7 +4,7 @@ pipeline {
     stages {
 	    stage ('remove') {
             steps {
-		rm -rf java-sample-app
+		sh 'rm -rf java-sample-app'
             }
         }
         stage ('checkout') {
