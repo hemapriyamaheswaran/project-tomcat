@@ -3,6 +3,7 @@
 <title>Hello World!</title>
 </head>
 <body>
+	<center>
 	<h1>Hello World!</h1>
 	<h2> App Tested 9 </h2>
 	<p>
@@ -12,4 +13,5 @@
 		You are coming from training-job
 		<%= request.getRemoteAddr()  %></p>
 	<p> Successfully tested.</p>
+	</center>
 </body>
