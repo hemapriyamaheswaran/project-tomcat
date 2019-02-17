@@ -5,7 +5,7 @@
 <body>
 	<center>
 	<h1>Hello World!</h1>
-	<h2> Successfully Deployed </h2>
+	<h2> Successfully Deployed done!!! </h2>
 	<p>
 		It is now
 		<%= new java.util.Date() %></p>
