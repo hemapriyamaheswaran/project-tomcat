@@ -12,6 +12,6 @@
 	<p>
 		You are coming from training-job
 		<%= request.getRemoteAddr()  %></p>
-	<p> Successfully tested hema</p>
+	<p> Successfully tested by hema</p>
 	</center>
 </body>
