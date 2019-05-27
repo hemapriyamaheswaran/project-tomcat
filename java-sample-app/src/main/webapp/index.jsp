@@ -10,7 +10,7 @@
 		It is now
 		<%= new java.util.Date() %></p>
 	<p>
-		You are coming from training-job
+		You are coming from Zippyops
 		<%= request.getRemoteAddr()  %></p>
 	<p> Successfully tested by hema</p>
 	</center>
